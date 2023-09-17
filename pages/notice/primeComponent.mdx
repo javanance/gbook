@@ -1,0 +1,262 @@
+---
+title: Prime Component
+---
+
+# Prime React Components
+
+
+## 1.테스트 내용
+-  kaTex
+-  primereact 의 components
+   - kaaa
+   - bbb
+   - ccc
+
+## 환경
+
+- nextjs
+- nextra
+- primereact
+
+---
+import 'primeicons/primeicons.css'
+import {Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, OverlayPanel, Fieldset, Callout, M1, G2Col, GSheet}  from '../../components/prime'
+import BasicDemo  from '../../components/buttonDemo'
+import DialogDemo  from '../../components/diagDemo'
+import OverlayDemo  from '../../components/overlayDemo'
+import Slides  from '../../components/slides'
+
+import { Message } from 'primereact/message';
+
+
+### primereact message
+<Message severity="info" text="Info Message asdfasdasdfasdfasdfasdfasaas asdfasdfasd a asdfasdfasdfasdfasdfasdfsadfsadfasdfasdf asdfasdfsafasdfsadfasdfsadfsad"/>
+
+Styling info
+
+<Message severity="info" text="Info Message"  style={{
+                    border: 'solid #696cff',
+                    borderWidth: '0 0 0 6px',
+                    width: '100%',
+                    justifyContent: 'left'
+                }}/>
+
+Styling warn
+<Message severity="warn" text="Info Message"  style={{
+                    border: 'solid orange',
+                    borderWidth: '0 0 0 6px',
+                    width: '100%',
+                    justifyContent: 'left'
+                }}/>
+
+
+### Message success
+<M1 severity ="success" text= "AAAasdfasdfasdfasdfas asdfasd asdfasdfasdf asdfasdfasd fasfasdfasfdasdfsa asdfasdfas dfasdfasdfas dfasdfsadfasdfsadfsadfsadfsadfasdfasdfsadfsadfsadfasdfsafdsadfsad" />
+
+### info
+<M1 severity ="info" icon ='pi pi-spinner' text= "AAA" />
+
+### Callout info success warn error
+
+<Callout severity ="info" >
+  # asdfa
+  ### h3
+  + asdfasd
+  + list2
+    + asdfasdasdfasdfasdfasdfasasdfasdfasdfasdfasdfsadfsadfsadfasdfasdfasfsadfdsa
+    + asdfas
+
+  1. asdfasd
+  2. adsfasd
+</Callout>
+
+### Callout 2 Columns
+
+<G2Col>
+    <Callout severity ="success">
+      # asdfa
+      ### h3
+      + asdfasd
+      + list2
+        + asdfasdasdfasdfasdfasdfasasdfasdfasdfasdfasdfsadfsadfsadfasdfasdfasfsadfdsa
+        + asdfas
+
+      1. asdfasd
+      2. adsfasd
+    </Callout>
+    <Callout severity ="info">
+      # asdfasdasd
+      ### h3
+      + asdfasd
+      + list2
+        + asdfasdasdfasdfasdfasdfasasdfasdfasdfasdfasdfasdfasdfasdfsadfsadf
+        + asdfas
+
+    asdfasdfasdfasdfasdfasdfsadfsadfasdfasdf
+    asdfasdfasd
+
+      1. asdfasd
+      2. adsfasd
+    </Callout>
+</G2Col>
+
+
+
+
+```js filename="demo.js" {3} copy
+let a = 1;
+
+console.log(a);
+
+```
+
+## Card
+    <Card title="Title" >
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
+            numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
+
+    </Card>
+
+## Fieldset
+
+<Fieldset legend = "aaa" toggleable>
+</Fieldset>
+
+## Tab
+
+  <TabView>
+      <TabPanel header="Header I" leftIcon="pi pi-calendar mr-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </TabPanel>
+      <TabPanel header="Header II" rightIcon="pi pi-user ml-2">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+              eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
+              enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+              ratione voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius modi.
+      </TabPanel>
+      <TabPanel header="Header III" leftIcon="pi pi-search mr-2" rightIcon="pi pi-cog ml-2">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+              quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in
+              culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+              Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+      </TabPanel>
+  </TabView>
+
+
+<TabView>
+    <TabPanel header="ㅁㅁ">
+
+    </TabPanel>
+    <TabPanel header="ㅁㅁ">
+
+    </TabPanel>
+    <TabPanel header="ㅁㅁ">
+
+    </TabPanel>
+</TabView>
+----
+
+
+
+## LaTex
+
+$$
+a^2 = b^2 + c^2
+$$
+
+
+## Popup
+<Card>
+ + public/data/test.json 을 데이터로 이용하고
+ + title property 에  보여주려는 문단의 title 을 입력
+ </Card>
+
+
+
+asdfasd <OverlayDemo id = "1_1"/>
+aasdfasdadfa
+
+
+
+asdfasd <OverlayDemo id = "111"/>
+aasdfasdadfa
+
+
+## Slide Embed
+
+<Slides title ="GMV" src="https://slides.com/javafinance/deck-8d8cf1/embed" width= "300" height="200"/>
+
+xfun::embed_file('/aaaa.pdf')
+
+
+
+## GoogleSheet embed
+<GSheet title="Full View Height">
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ8BTXfIHM2vvmJMLR2OVHySo2fKBJwCWvdQjFp7Z-gmMlXQHZFwOmL2ZZIW_X4RuT_h6Pdb7rnSR_T/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
+ width="100%" height="800"></iframe>
+
+
+</GSheet>
+
+## onedrive
+<GSheet title="onedrive test">
+<iframe width="100%" height="900" frameBorder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=AB5F66CE0CF8D024%2113427&authkey=%21AAqrgqIOOYku5q0&em=2&AllowTyping=True&Item=%EA%B0%80%EC%9A%A9%EC%9E%90%EB%B3%B8!Print_Area&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=false&resen=true&ed1JS=false">
+</iframe>
+</GSheet>
+---
+
+<GSheet height = "h-15rem" title="Range"   >
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ8BTXfIHM2vvmJMLR2OVHySo2fKBJwCWvdQjFp7Z-gmMlXQHZFwOmL2ZZIW_X4RuT_h6Pdb7rnSR_T/pubhtml?gid=0&amp;single=true&amp;range=A1:B3&amp;widget=true&amp;headers=false"
+ width="100%" ></iframe>
+</GSheet>
+
+---
+<GSheet height = "h-30rem" title="Tab Remove"  >
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ8BTXfIHM2vvmJMLR2OVHySo2fKBJwCWvdQjFp7Z-gmMlXQHZFwOmL2ZZIW_X4RuT_h6Pdb7rnSR_T/pubhtml?gid=0&amp;single=true&amp;range=A1:B3&amp;widget=false&amp;headers=false"
+ width="100%" height="200"></iframe>
+
+
+</GSheet>
+
+
+
+## Panel
+    <Panel header="Header" toggleable>
+            Lorem ipsum **dolor sit amet**, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </Panel>
+
+
+## Accordion
+
+    <Accordion multiple activeIndex={[0,1]}>
+        <AccordionTab header="Header I">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </AccordionTab>
+        <AccordionTab header="Header II">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                Consectetur, adipisci velit, sed quia non numquam eius modi.
+        </AccordionTab>
+        <AccordionTab header="Header III">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+                quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
+                mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+        </AccordionTab>
+    </Accordion>
+
+## Custom
+<BasicDemo/>
+
+## Component

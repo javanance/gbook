@@ -1,0 +1,54 @@
+  {
+  "index": {
+    "title": "Introduction"
+    ,"type": "page"
+  }
+  ,"about": {
+    "title": "About"
+    ,"type": "page"
+  }
+
+  ,"notice": {
+     "title": "Notices"
+    ,"type": "page"
+    , "theme": {
+      "typesetting": "article"
+    }
+  }
+
+  ,"ifrs": {
+     "title": "IFRS"
+    ,"type": "page"
+    ,"display" : "hidden"
+  }
+  ,"kics": {
+     "title": "KICS"
+    ,"type": "page"
+    ,"display" : "hidden"
+  }
+  ,"gmv": {
+     "title": "GMV"
+    ,"type": "page"
+    ,"display" : "hidden"
+  }
+
+  ,"Reference": {
+    "title": "References",
+    "type": "menu",
+    "items": {
+      "ifrs": {
+        "title": "IFRS17",
+        "href": "/ifrs/01"
+      },
+      "kics": {
+        "title": "KICS↗",
+        "href": "/kics/intro"
+        ,"newWindow": true
+      },
+      "gmv": {
+        "title": "GMV",
+        "href": "/gmv/satori"
+      }
+    }
+  }
+}
