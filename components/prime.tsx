@@ -16,7 +16,9 @@ import {
   AccordionProps,
   AccordionTabProps,
 } from "primereact/accordion";
-import { Card } from "primereact/card";
+import { ChipsProps } from "primereact/chips";
+
+import { Card, CardProps } from "primereact/card";
 import { Dialog } from "primereact/dialog";
 import { OverlayPanel } from "primereact/overlaypanel";
 import { TabView, TabPanel } from "primereact/tabview";
@@ -26,14 +28,11 @@ import { Panel } from "primereact/panel";
 import { Fieldset } from "primereact/fieldset";
 import { Message } from "primereact/message";
 import { PrimeIcons } from "primereact/api";
-import { Image } from "primereact/image";
+import { Image, ImageProps } from "primereact/image";
 import { Chip } from "primereact/chip";
-import type { CardProps } from "primereact/card";
-import type { ImageProps } from "primereact/image";
-import { ChipsProps } from "primereact/chips";
-import { string } from "prop-types";
 import { Tooltip } from "primereact/tooltip";
 import { Toast } from "primereact/toast";
+// import { string } from "prop-types";
 
 import checklist from "@/public/data/check.json";
 
